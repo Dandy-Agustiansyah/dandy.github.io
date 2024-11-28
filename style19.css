@@ -28,6 +28,98 @@ header {
   transition: 0.5s ease;
 }
 
+/* Media Queries untuk perangkat mobile */
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 50px 20px; /* Mengurangi padding untuk perangkat kecil */
+    }
+
+    header {
+        padding: 10px 20px; /* Mengurangi padding header */
+        flex-direction: column; /* Mengubah arah flex untuk header */
+        align-items: flex-start; /* Menyelaraskan item ke kiri */
+    }
+
+    header .navigasi {
+        margin-top: 10px; /* Menambahkan jarak di atas navigasi */
+        display: flex;
+        flex-direction: column; /* Mengubah navigasi menjadi kolom */
+    }
+
+    header .navigasi a {
+        margin-left: 0; /* Menghapus margin kiri */
+        margin-top: 10px; /* Menambahkan margin atas */
+    }
+
+    .home .content1 {
+        width: 100%; /* Mengubah lebar konten menjadi 100% */
+        text-align: center; /* Menyelaraskan teks ke tengah */
+    }
+
+    .home .content2 {
+        width: 100%; /* Mengubah lebar konten menjadi 100% */
+        margin-top: 20px; /* Menambahkan jarak di atas */
+    }
+
+    .home .img {
+        width: 50vh; /* Mengubah lebar gambar */
+    }
+
+    .PROFILE .content {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        align-items: center; /* Menyelaraskan item ke tengah */
+    }
+
+    .PROFILE .content .col-left,
+    .PROFILE .content .col-right {
+        width: 100%; /* Mengubah lebar kolom menjadi 100% */
+        margin-bottom: 20px; /* Menambahkan jarak bawah */
+    }
+
+    .project .content .card {
+        width: 100%; /* Mengubah lebar kartu menjadi 100% */
+        margin: 10px 0; /* Mengurangi margin */
+    }
+
+    .activity-image {
+        width: 100%; /* Mengubah lebar gambar aktivitas menjadi 100% */
+        height: auto; /* Membuat tinggi otomatis */
+    }
+
+    .kontak .content .card {
+        width: 80%; /* Mengubah lebar kartu menjadi 80% */
+        margin: 10px 0; /* Mengurangi margin */
+    }
+}
+
+/* Media Queries untuk perangkat kecil */
+@media only screen and (max-width: 480px) {
+    header .brand {
+        font-size: 1.5em; /* Mengurangi ukuran font brand */
+    }
+
+    header .navigasi a {
+        font-size: 0.9em; /* Mengurangi ukuran font navigasi */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Mengurangi ukuran font h2 */
+    }
+
+    .animasi-text h3 {
+        font-size: 2em; /* Mengurangi ukuran font animasi */
+    }
+
+    .btns {
+        padding: 8px; /* Mengurangi padding tombol */
+    }
+
+    .activity-image {
+        width: 100%; /* Mengubah lebar gambar aktivitas menjadi 100% */
+        height: auto; /* Membuat tinggi otomatis */
+    }
+}
+
 header .brand {
   color: rgb(246, 245, 242);
   font-size: 1.8em;
